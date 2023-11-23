@@ -40,9 +40,11 @@ Sinta-se à vontade para contribuir com melhorias neste projeto. Você pode abri
 - Lucas Nathan
 - Instagram: [@071lkz](https://instagram.com/071lkz)
 
+
+https://kaleidoscopic-fenglisu-162637.netlify.app/
 ---
 
-Feito com ❤️ por Lucas Nathan
+Feito por Lucas Nathan
 ```
 
  
