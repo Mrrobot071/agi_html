@@ -14,11 +14,11 @@
             color: white;
             text-align: center;
             font-size: 24px;
-            padding: 100px;
+            padding: 90px;
         }
         h1 {
             font-family: Arial, sans-serif;
-            font-size: 20px;
+            font-size: 24px;
         }
         .botoes {
             display: flex;
@@ -31,27 +31,21 @@
             background-color: silver;
             color: purple;
             border: none;
-            padding: 10px 20px;
+            padding: 10px 16px;
+            border-radius: 10px;
             cursor: pointer;
             position: absolute;
         }
         #nao {
-            left: 50%; /* Posição inicial no meio da tela */
+            left: 51%; /* Posição inicial no meio da tela */
         }
         #sim {
-            left: 33%; /* Posição inicial à esquerda do botão "Não" */
+            right: 51%; /* Posição inicial à esquerda do botão "Não" */
         }
-        #boneco-dancando {
-            display: none;
-            max-width: 100%;
-            margin: 0 auto; /* Center the video horizontally */
+        .centralizar-conteudo {
+            display: flex;
+            justify-content: center;
         }
-        .centralizado {
-    display: block;
-    margin: 50px auto; /* Adicione uma margem superior de 40px (ou o valor desejado) */
-    max-width: 360px; /* Largura máxima do vídeo */
-    height: 360px; /* Altura fixa do vídeo */
-}
 
         /* Estilos para a linha de créditos */
         .creditos {
@@ -62,19 +56,7 @@
             font-size: 10px;
             color: white;
         }
-        /* Styles for responsive video */
-        iframe {
-            width: 110%; /* Largura 100% para preencher o espaço disponível */
-            height: 100%; /* Altura 100% para preencher o espaço disponível */
-        }
-        /* Media query for smaller screens */
-        @media (max-width: 360px) {
-            /* Ajuste de fonte para telas menores */
-            body {
-                font-size: 16px;
-            }
-        }
-    </style>
+    </style> 
 </head>
 <body>
     <h1>Vai me pagar não?</h1>
@@ -84,8 +66,17 @@
     </div>
     <p id="mensagem"></p>
     <!-- Substitua o GIF pelo iframe de vídeo responsivo do YouTube -->
-    <div class="centralizado">
-        <iframe src="https://www.youtube.com/embed/fdPgA6ECj9E" title="Cadê o Pix?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="centralizar-conteudo">
+        <div class="centralizado">
+<iframe
+    src="https://www.youtube.com/embed/fdPgA6ECj9E"
+    title="Cadê o Pix?"
+    frameborder="0"
+    allow="accelerometer; autoplay-1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+    style="display: block; margin: 50px; max-width: 400px; height: 400px;"
+></iframe>
+        </div>
     </div>
     <script>
         var botaoNaoClicado = true;
